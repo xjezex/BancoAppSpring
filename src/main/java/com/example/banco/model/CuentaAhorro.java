@@ -7,8 +7,8 @@ import jakarta.persistence.Entity;
 @DiscriminatorValue("AHORRO")
 public class CuentaAhorro extends Cuenta {
 
-    public CuentaAhorro(String numero, String titular, double saldo) {
-        super(numero, titular, saldo);
+    public CuentaAhorro(String numero, String titular) {
+        super(numero, titular);
     }
 
     @Override

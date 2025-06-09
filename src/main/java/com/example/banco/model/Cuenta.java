@@ -18,6 +18,21 @@ public abstract class Cuenta {
     private String titular;
     private double saldo;
 
+    public Cuenta(String numero, String titular) {
+        this.numero = numero;
+        this.titular = titular;
+        this.saldo = 0.0;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo){
+        this.saldo = saldo;
+    }
+
+
     public abstract void retirar(double monto);
 
     public void depositar(double monto) {
